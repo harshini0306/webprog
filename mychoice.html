@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choice</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #section2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensures the section takes full height of the viewport */
+            text-align: center;
+        }
+
+        #section2 ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #section2 li {
+            margin: 10px;
+        }
+        h2 {
+            position: absolute; /* Use absolute positioning */
+            top: 245%;  /* 10% from the top of the container/page */
+            left: 40%; /* 20% from the left of the container/page */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#section1">Home</a>
+        <a href="#section2">My websites</a>
+        <a href="#section3">Blog</a>
+        <a href="#section4">Contact</a>
+    </nav>
+
+    <!-- Landing Page (Now inside section1 for "Home") -->
+    <div id="section1" class="section">
+        <div style="margin: 0; height: 100vh; background: linear-gradient(135deg, #ff9a9e, #fad0c4); background-position: center; background-repeat: no-repeat;">
+            <div style="position: relative; z-index: 2; color: black; padding: 20px;">
+                <center>
+                    <h1>Hi. I'm Harshini.</h1><br>
+                    <p><font size="6">
+                        Welcome to my personal webpage! Scroll down to know more about me.</font>
+                    </p><br><br>
+                </center>
+
+                <font size="5">
+                    <div>
+                        <img src="file:///C:/Users/Harsh/Pictures/Camera%20Roll/maroon%20dress.JPG" width="180" height="180" align="left" hspace="15">
+                        <p style="color: black;">
+                            I am an <strong>emerging Machine Learning and AI engineer</strong> with a deep interest in 
+                            <b>data science</b> and its transformative potential. Currently pursuing a 
+                            <em>computer science degree</em> at <strong>Vellore Institute of Technology</strong>, 
+                            I have a <b>solid understanding</b> of data structures and algorithms and possess 
+                            strong programming skills in <b>Python, C, C++, and Java.</b>
+                        </p>
+                    </div>
+
+                    <div>
+                        <center>
+                            <p style="color: black;">
+                                I have <span style="font-size: 20px; color: red">worked on machine learning projects</span> 
+                                involving predictive modeling, classification etc.  Beyond academics,I <span style="font-size: 20px; color: red;">actively participate in coding competitions and hackathons.</span> 
+                                My passion for AI emerging technologies drives me to continuously learn and apply my skills 
+                                to real-world challenges.
+                        </center>
+                    </div>
+                </font>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for 'My Websites' -->
+    <div id="section2" class="section">
+        <h1>Webpages that I created:</h1>
+        <ul>
+            <li><a href="file:///C:/Users/Harsh/.vscode/timetable1.html" target="_blank">Timetable</a></li>
+            <li><a href="file:///C:/Users/Harsh/.vscode/cli/solar%20system/solarsystemfinal.html" target="_blank">Solarsystem</a></li>
+            <li><a href="file:///C:/Users/Harsh/.vscode/portfolio/phome.html" target="_blank">My portfolio</a></li>
+            <li><a href="file:///C:/Users/Harsh/.vscode/portfolio/form.html" target="_blank">Registration form</a></li>
+        </ul>
+    </div>
+
+    <!-- Section for 'Blog' -->
+    <div id="section3" class="section">
+        <h1>Blog</h1><br><br>
+        <p>
+            <img src="C:/Users/Harsh/Pictures/Screenshots/Screenshot 2025-01-12 211617.png" alt="Timetable" 
+                style="position: absolute; top: 255%; left: 10%; width: 300px; height: 200px;">
+            
+            <img src="C:/Users/Harsh/Pictures/Screenshots/Screenshot 2025-01-12 211504.png" alt="Solar system" 
+                style="position: absolute; top: 255%; left: 40%; width: 300px; height: 200px;">
+            
+            <img src="C:/Users/Harsh/Pictures/Screenshots/Screenshot 2025-01-12 211842.png" alt="Registration form" 
+                style="position: absolute; top: 255%; left: 70%; width: 300px; height: 200px;">
+                <h2>Some of my webpages:</h2>
+                <p>
+                    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExenFocDVjbnF6d2dnemsxd3NkYnBwOGlrbnVneWphdnZzODJ6MmEyZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Uophj9m2mw4PWsaoME/giphy.webp" alt="Coffee GIF" 
+                    style="position: absolute; top: 215%; left: 40%; width: 300px; height: 200px;">
+                </p>
+        </p>
+    </div>    
+
+    <div id="section4" class="section">
+        <h1>Contact me</h1>
+
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body> </html>
